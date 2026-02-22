@@ -6,4 +6,5 @@ This is a collection of my CTF writeups, walkthroughs, and security research. I 
 
 📂 STRUCTURE
 Challenge.md and supporting files.
-<img width="185" height="28" alt="image" src="https://github.com/user-attachments/assets/29b242e6-5312-405f-a0b8-216b7608cf1b" />
+
+<img width="185" height="28" alt="image" src="" />
