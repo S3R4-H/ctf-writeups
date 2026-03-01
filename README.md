@@ -28,6 +28,17 @@ This repo serves as:
 
 ---
 
+## 📝 Writeups
+- [THJCC CTF 2026](./THJCC_CTF_2026/)
+  - [0422 Challenge](./THJCC_CTF_2026/0422.md)
+  - [A Long Time Ago](./THJCC_CTF_2026/A_long_time_ago.md)
+  - [CHAT](./THJCC_CTF_2026/CHAT.md)
+  - [EAR](./THJCC_CTF_2026/EAR.md)
+  - [Las Vegas](./THJCC_CTF_2026/Las_Vegas.md)
+  - [Secret File Viewer](./THJCC_CTF_2026/Secret_File_Viewer.md)
+
+---
+
 ## 🌐 **Connect**
 - 🐙 [GitHub](https://github.com/S3R4-H)  
 - 💬 [Discord](https://discord.com/users/1368295816556581014)  
