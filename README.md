@@ -29,7 +29,7 @@ This repo serves as:
 ---
 
 ## 📝 Writeups
-- [THJCC CTF 2026](./THJCC_CTF_2026/)
+- [THJCC CTF 2026](./THJCC_CTF_2026/)  **MY_FIRST_WRITEUPS**
   - [0422 Challenge](./THJCC_CTF_2026/0422.md)
   - [A Long Time Ago](./THJCC_CTF_2026/A_long_time_ago.md)
   - [CHAT](./THJCC_CTF_2026/CHAT.md)
