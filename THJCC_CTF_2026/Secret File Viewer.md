@@ -4,13 +4,13 @@ We were provided with files **A–C**, which contained captured conversations an
 
 From the analysis of `script.js`, we identified that it functions as a **Client-Side Path Traversal (CSPT) protection module**.
 
-![[secre_file_viewer_UI.png]]
+![UserInterface](./images/secre_file_viewer_UI.png)
 
-![[secret_file_viewer_fileA.png]]
+![FileA](./images/secret_file_viewer_fileA.png)
 
-![[secret_file_viewer_fileA.png]]
+![FileB](./images/secret_file_viewer_fileB.png)
 
-![[secret_file_viewerfileC.png]]
+![FileC](./images/secret_file_viewerfileC.png)
 
 ## JavaScript Analysis (`script.js`)
 
@@ -119,14 +119,14 @@ No traversal was necessary.
 
 The current directory is files from downloads.php, files is not root::
 
-![[secret_file_viewer_html.png]]
+![HTML](./images/secret_file_viewer_html.png)
 But wait!! In PHP, if a script uses a function like file_get_contents($file), or include($$file), and you provide /etc/passwd, the OS ignored whatever current directory the sript is in and goes straight to the root. W3School's PHP include and PHP's filesystem documentation explain that paths starting with / are treated as absolute.
 Therefore the script.js was no use
 
-![[secret_file_viewer_test1.png]]
+![Test](./images/secret_file_viewer_test1.png)
 From the above image, you can see i did not have to traverse to reach the root and access /etc/passwd.
 
-![[secret_file_viewer_final.png]]
+![Final](./images/secret_file_viewer_final.png)
 
 
 NOTE::We assume it uses functions like `include()`, `require()`, `file_get_contents()`, or `readfile()` because your `curl` command successfully returned the contents of `/etc/passwd`
