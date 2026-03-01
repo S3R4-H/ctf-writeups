@@ -9,6 +9,9 @@
 ---
 
 ## 👋 **Welcome**
+I’m currently at a **beginner level** in cybersecurity and CTF competitions, and this repository documents my learning journey.  
+By sharing my write-ups, I hope to both improve my skills and help others who are starting out too.
+
 This repository is a collection of my **Capture The Flag (CTF)** challenge write-ups.  
 Here I document the **process, tools, and techniques** I used to solve different security puzzles.  
 
