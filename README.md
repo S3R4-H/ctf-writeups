@@ -1,6 +1,7 @@
 # 🚩 **CTF Writeups**
 
-[![GitHub](https://img.shields.io/badge/GitHub-S3R4-H-black?logo=github)](https://github.com/S3R4-H)
+[![GitHub](https://img.shields.io/badge/GitHub-S3R4--H-black?logo=github)](https://github.com/S3R4-H)
+
 [![Discord](https://img.shields.io/badge/Discord-ur.pal123%230-blue?logo=discord)](https://discord.com/users/1368295816556581014)
 
 ---
