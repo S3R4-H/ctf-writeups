@@ -1,7 +1,7 @@
 **Execution After Redirect (EAR)**
 
 The web asks for a username and password. 
-![[Ear_login.png]]
+![Login](./images/Ear_login.png)
 
 ### Challenge
 
@@ -30,7 +30,7 @@ Login page redirected but continued executing code.
     
 - Sensitive files like `admin.php` or `system.php` would never be executed in that request.
 
-![[EAR_SourceCode.png]]
+![SourceCode](./images/EAR_SourceCode.png)
 
 ### Exploit
 
@@ -42,11 +42,11 @@ Login page redirected but continued executing code.
     
 4. Retrieved the flag.
 
-![[FUZZ_Ears.png]]
+![Fuzz](./images/FUZZ_Ears.png)
 
-![[admin_ears.png]]
+![admin](./images/admin_ears.png)
 
-![[final_ears.png]]
+![Final](./images/final_ears.png)
 
 and got the flag
 FLAG::THJCC{U_kNoW-HOw-t0_uSe-EaR}
