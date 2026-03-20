@@ -35,5 +35,6 @@ Fixed in PHP 8.0, where `"admin" == 0` evaluates to false.
 `THJCC{Meow_M3ow_Me0w}`
 
 SOLUTION:
-![[long_time_ago_burpsuit.png]]
-![[long_time_ago_final.png]]
+![burpintercept](./images/long_time_ago_burpsuit.png)
+
+![final](./images/long_time_ago_final.png)
