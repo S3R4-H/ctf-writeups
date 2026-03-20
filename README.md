@@ -29,7 +29,9 @@ This repo serves as:
 ---
 
 ## 📝 Writeups
+  **2026**
 - [THJCC CTF 2026](./THJCC_CTF_2026/)  **MY_FIRST_WRITEUPS**
+- [PicoCTF2026](./PicoCTF2026)
 
 ---
 
