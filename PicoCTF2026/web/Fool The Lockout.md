@@ -1,8 +1,8 @@
-![[lockout_description.png]]
+![lockout_description.png](images/lockout_description.png)
 
 **Description
 The app has a rate limit of 1 IP per 10 requests. This means after 10 failed login attempts the same IP will be rejected from sending any more requests.
-![[lockout_exceed_rate_func.png]]
+![lockout_exceed_rate_func.png](images/lockout_exceed_rate_func.png)
 Every time a user visits /login, the code runs if exceeded_rate_limit()
 It identifies the user via client_ip = request.remote_addr
 If the request is a POST, it increments num_requests for that specific IP
