@@ -1,11 +1,11 @@
-![[reentrance_description.png]]
+![reentrance_description.png](images/reentrance_description.png)
 
 
 **Description
 The contract is vulnerable to a **reentrancy attack** because it performs an external call before updating the user’s balance
 
 **Vulnerability
-![[reentrance_vulncode.png]]
+![reentrance_vulncode.png](images/reentrance_vulncode.png)
 Because the external call `msg.sender.call{value: amount}("")` happens before the user's balance is updated `balances[msg.sender] -= amount`. A malicious contract can call withdraw repeatedly within its receive or fallback function. This allow an attacker to drain the entire contract balance. Once the balance hits zero, the revealed flag flips to true, leaking the flag
 
 **Exploitation
@@ -23,12 +23,12 @@ That’s why the **Attacker contract** is needed:
 - An **attacker contract**, on the other hand, is programmable. It _does_ have a `receive()` function that fires automatically when ETH arrives. That’s the hook that lets it immediately call `Bank.withdraw()` again before the Bank finishes its first execution. This is what creates the recursive loop.
 
 **forge create fail
-![[reentrance_firstcommand.png]]
+![reentrance_firstcommand.png](images/reentrance_firstcommand.png)
 
 
 **Compiled bytecode of attacker contract
 Since forge failed i got the raw hex needed for a manual deployment.
-![[reentrance_bytecode.png]]
+![reentrance_bytecode.png](images/reentrance_bytecode.png)
 When compiling exploit.sol, it created a JSON file containing metadata. The JSON field inside that JSON is the EVN Bytecode. 
 Block 1 is the deployment bytecode. It is the code that runs once to set up the contract, save variables and store the second block in the blockchain
 Block 2 is the runtime bytecode. This is the code that stays on the blockchain forever and contains attack() and receive() functions.
@@ -38,11 +38,11 @@ I took the deployment bytecode and append the bankaddress to the end of it.  Thi
 After running this the attackers contract is running at `0x6bcA4BDf61Cb9C46dCE3E057a36076C01d4Ebb2D`
 
 
-![[reentrance_command1foreal.png]]
+![reentrance_command1foreal.png](images/reentrance_command1foreal.png)
 
 **Command 2
 The --value 1ether sends  1 ETH from player wallet into Attacker contract as it runs the attack function. This is the "seed money" 
-![[reentrance_command1.png]]
+![reentrance_command1.png](images/reentrance_command1.png)
 What will happen is::
 - **Your Wallet** sends 1 ETH to **Attacker.attack()**.
 - **Attacker** sends that 1 ETH to **Bank.deposit()**.
@@ -53,7 +53,7 @@ What will happen is::
 - **Bank** sets `revealed = true`.
 
 **Flag
-![[reentrance_flag.png]]
+![reentrance_flag.png](images/reentrance_flag.png)
 
 
 **Conclusion
