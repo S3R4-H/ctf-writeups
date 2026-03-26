@@ -11,13 +11,46 @@
             "id": "2f1444e78e2bd47f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blockchains/ACCESS CONTROL.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ACCESS CONTROL"
+            }
+          },
+          {
+            "id": "56722507cea4c693",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blockchains/Front_Running.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Front_Running"
+            }
+          },
+          {
+            "id": "7a84ab68684b88d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web/Secret Box.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Secret Box"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -176,12 +209,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "6e4ca733edf09ece",
+  "active": "7a84ab68684b88d5",
   "lastOpenFiles": [
+    "web/Order Order.md",
+    "web/No FA.md",
+    "web/Fool The Lockout.md",
+    "forensics/Forensics Git0 & 1.md",
+    "forensics/images/Forensics_Git0_command3.png",
+    "forensics/images/Forensics_Git1_command3.png",
+    "forensics/Timeline 0 & 1.md",
+    "forensics/images/Timeline0_command2.png",
+    "web/Secret Box.md",
+    "web/images/lo.png",
+    "web/images/SQL_Map1_command1.png",
+    "web/images/SQL_Map1_Command1error.png",
+    "web/images/SQL_Map1_command2.png",
+    "web/images/SQL_Map1_Command2result.png",
+    "web/images/SQL_Map1_Description.png",
+    "web/images/SQL_Map1_hint.png",
+    "web/SQL Map 1.md",
+    "forensics/Welcome.md",
+    "images/smartflow_description.md",
+    "forensics/images",
+    "blockchains/Smart_Overflow.md",
+    "blockchains/Reentrance.md",
+    "images",
+    "blockchains/Front_Running.md",
+    "blockchains/ACCESS CONTROL.md",
+    "blockchains/img",
+    "Untitled",
     "ACCESS CONTROL.md",
     "Untitled.md",
     "blockchains",
-    "timestamb.png",
     "Welcome.md"
   ]
 }

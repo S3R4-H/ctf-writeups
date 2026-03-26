@@ -15,16 +15,14 @@ I used a code to exploit.sol. The Attacker contract will hijack the bank executi
 So while the Bank is still busy sending first 1 ETH, the receive() function keeps callingbank.withdraw(amount) again. The bank looks at balance, sees it is still 1 ETH and sends another 1 ETH, creating a recursive loop that drains the Bank until the balance is 0.
 
 **NOTE::
-That’s why the **Attacker contract** is needed:
-- Contracts _can_ have a `receive()` function that runs automatically whenever ETH is sent to them.
+Why the **Attacker contract** is needed:
+- Contracts can have a `receive()` function that runs automatically whenever ETH is sent to them.
 - Inside `receive()`, the attacker can immediately call `Bank.withdraw()` again before the Bank finishes its first execution.    
 - This recursive loop is only possible because the attacker contract acts as a programmable middleman between your wallet and the Bank.
 - - A **user wallet** (an externally owned account, EOA) can send ETH and call functions, but it can’t execute code automatically when ETH is received. There’s no `receive()` or `fallback` function in a wallet. So once the Bank sends ETH back, the wallet just passively accepts it — no chance to re‑enter the Bank mid‑transaction.
 - An **attacker contract**, on the other hand, is programmable. It _does_ have a `receive()` function that fires automatically when ETH arrives. That’s the hook that lets it immediately call `Bank.withdraw()` again before the Bank finishes its first execution. This is what creates the recursive loop.
 
 **forge create fail
-![reentrance_firstcommand.png](images/reentrance_firstcommand.png)
-
 
 **Compiled bytecode of attacker contract
 Since forge failed i got the raw hex needed for a manual deployment.

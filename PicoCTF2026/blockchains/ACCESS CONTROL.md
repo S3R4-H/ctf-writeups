@@ -16,7 +16,8 @@ CONTACT DETAILS
 **The Vulnerability**
 
 The changeOwnder function is marked as public, but it lacks require statements of modifiers. This means anyone can call this function and set themselves as the owner.
-![vuln_func.png](images/vuln_func.png)
+
+![vuln_func.png](img/vuln_func.png)
 
 **Solution**
 
@@ -24,7 +25,7 @@ The changeOwnder function is marked as public, but it lacks require statements o
 format: `cast send [Contract] "changeOwner(address)" [YourAddress] --private-key [YourKey]`
 ![command1.png](images/command1.png)
 The output is the transaction reciept. It proves that the attack worked and i am officially the owner of the contract. Now that i am the ownner. I trigger the solve() function which checks if msg.sender == owner
-![solve_function.png](images/solve_function.png)
+![solve_function.png](img/solve_function.png)
 Command 2:
 Format: cast send [Contract] "solve()" --rpc-url [myurl] --private-key [ privatekey ] --legacy --gas-limit [gaslimit]
 ![command2.png](images/command2.png)

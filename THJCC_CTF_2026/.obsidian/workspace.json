@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "9d2cdb75660d44c0",
+    "id": "a29bc350f34090c0",
     "type": "split",
     "children": [
       {
-        "id": "0959e44f7cf2462f",
+        "id": "4807be5be3798603",
         "type": "tabs",
         "children": [
           {
-            "id": "b96f2c2d775302cc",
+            "id": "d7ebb6d05199a3e6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "EAR.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "EAR"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8c640afd19afe914",
+    "id": "b6666c162b394d51",
     "type": "split",
     "children": [
       {
-        "id": "11e30613d21f880e",
+        "id": "e5e641e5687ded2c",
         "type": "tabs",
         "children": [
           {
-            "id": "07a247a437482593",
+            "id": "539ecf986e6748e2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "5b7a854ea3ec8582",
+            "id": "ecf876d415386d83",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "3e35d0dfab5d9642",
+            "id": "99b69923316ce7d6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "8abb527b0d238d79",
+    "id": "8b835b2d6ae933d7",
     "type": "split",
     "children": [
       {
-        "id": "6284d3c5e77fd5b7",
+        "id": "2d8c4d9ee2e500e0",
         "type": "tabs",
         "children": [
           {
-            "id": "bfd1783851c2a59e",
+            "id": "197e478f1e172a2c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "EAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for EAR"
             }
           },
           {
-            "id": "061315696acd01b1",
+            "id": "65d184b900233227",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "EAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from EAR"
             }
           },
           {
-            "id": "bd94b3ceb769e036",
+            "id": "461e3034a4de520e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,7 +137,7 @@
             }
           },
           {
-            "id": "4a968c00763bfcb5",
+            "id": "6b302b2c1f6715a2",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -147,18 +151,18 @@
             }
           },
           {
-            "id": "b702e3e742230e83",
+            "id": "98a96b2469725be0",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "EAR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of EAR"
             }
           }
         ]
@@ -179,21 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "b96f2c2d775302cc",
+  "active": "d7ebb6d05199a3e6",
   "lastOpenFiles": [
-    "Forensics Git0.md",
-    "images/Forensics_Git1_command5.png",
-    "images/Forensics_Git1_command4.png",
-    "images/Forensics_Git1_command3.png",
-    "images/Forensics_Git1_command2.png",
-    "images/Forensics_Git1_command1.png",
-    "images/Forensics_Git1_description.png",
-    "images/Forensics_Git0_command3_3.png",
-    "images/Forensics_Git0_command3_2.png",
-    "images/Forensics_Git0_command3.png",
-    "images/Forensics_Git0_command2_3.png",
-    "Timeline 0.md",
-    "Welcome.md",
-    "images"
+    "CHAT.md",
+    "A long time ago....md",
+    "0422.md",
+    "Secret File Viewer.md",
+    "Las_Vegas.md",
+    "EAR.md"
   ]
 }
