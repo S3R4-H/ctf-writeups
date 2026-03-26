@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "9d2cdb75660d44c0",
+    "id": "91275b3d9bd82140",
     "type": "split",
     "children": [
       {
-        "id": "0959e44f7cf2462f",
+        "id": "bfeef7b32a8b523f",
         "type": "tabs",
         "children": [
           {
-            "id": "b96f2c2d775302cc",
+            "id": "99b16486319676f7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "web/Web-tutorial1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Web-tutorial1"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8c640afd19afe914",
+    "id": "87d398657ef07b54",
     "type": "split",
     "children": [
       {
-        "id": "11e30613d21f880e",
+        "id": "bd8aa3b6890cd992",
         "type": "tabs",
         "children": [
           {
-            "id": "07a247a437482593",
+            "id": "abe8877f47ccc187",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "5b7a854ea3ec8582",
+            "id": "2f669efcdaf348c6",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "3e35d0dfab5d9642",
+            "id": "bea03177337ff9ad",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "8abb527b0d238d79",
+    "id": "9bdbfd2ce3905d37",
     "type": "split",
     "children": [
       {
-        "id": "6284d3c5e77fd5b7",
+        "id": "e20d0e1b66a643d7",
         "type": "tabs",
         "children": [
           {
-            "id": "bfd1783851c2a59e",
+            "id": "dcf86f0d492f848f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "web/Web-tutorial1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Web-tutorial1"
             }
           },
           {
-            "id": "061315696acd01b1",
+            "id": "b477f335cfd9ec64",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "web/Web-tutorial1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from Web-tutorial1"
             }
           },
           {
-            "id": "bd94b3ceb769e036",
+            "id": "3274a646b313ec1c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,7 +137,7 @@
             }
           },
           {
-            "id": "4a968c00763bfcb5",
+            "id": "8b2ea331e8d18ba2",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -147,18 +151,18 @@
             }
           },
           {
-            "id": "b702e3e742230e83",
+            "id": "31097a614b4f1459",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "web/Web-tutorial1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Web-tutorial1"
             }
           }
         ]
@@ -179,21 +183,6 @@
       "bases:Create new base": false
     }
   },
-  "active": "b96f2c2d775302cc",
-  "lastOpenFiles": [
-    "Forensics Git0.md",
-    "images/Forensics_Git1_command5.png",
-    "images/Forensics_Git1_command4.png",
-    "images/Forensics_Git1_command3.png",
-    "images/Forensics_Git1_command2.png",
-    "images/Forensics_Git1_command1.png",
-    "images/Forensics_Git1_description.png",
-    "images/Forensics_Git0_command3_3.png",
-    "images/Forensics_Git0_command3_2.png",
-    "images/Forensics_Git0_command3.png",
-    "images/Forensics_Git0_command2_3.png",
-    "Timeline 0.md",
-    "Welcome.md",
-    "images"
-  ]
+  "active": "99b16486319676f7",
+  "lastOpenFiles": []
 }

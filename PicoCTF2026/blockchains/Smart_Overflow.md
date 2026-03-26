@@ -1,5 +1,5 @@
 
-![smartflow_description.png](images/smartflow_description)
+![smartflow_description.png](images/smartflow_description.png)
 
 ![smartflow_contract_details.png](images/smartflow_contract_details.png)
 
