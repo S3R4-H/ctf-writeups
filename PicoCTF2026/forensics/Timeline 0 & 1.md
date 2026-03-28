@@ -12,6 +12,7 @@
 
 -b points to generated .txt, -d output in comma-delimited format and -y uses ISO 8601 date format
 **The hint says
+
 ![Timeline_hint.png](./images/Timeline_hint.png)
 
 This hint mean that .attacker attempted to hide a file by changing its timestamps but made a mistake in the process.
