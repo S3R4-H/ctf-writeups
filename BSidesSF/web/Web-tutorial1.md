@@ -158,7 +158,7 @@ Result in webhook
 
 decoded
 
-![web-tutorial2_attempt3.png](./images/web-tutorial2_attempt3.png)
+![web-tutorial2_flag](./images/web-tutorial2_flag.png)
 
 
 ---
