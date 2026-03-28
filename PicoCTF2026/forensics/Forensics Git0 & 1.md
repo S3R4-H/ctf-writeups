@@ -1,4 +1,4 @@
-![[images/Forensics_Git0_description.png]]
+![Forensics_Git0_description.png](./images/Forensics_Git0_description.png)
 
 **The hint says to extract the directory from the disk image
 
