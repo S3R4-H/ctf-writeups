@@ -18,10 +18,15 @@ This hint mean that .attacker attempted to hide a file by changing its timestamp
 
 **So we will look at a very old time
 From the .csv i found an old date 
+
 ![Timeline0_oldone.png](./images/Timeline0_oldone.png)
+
 I tried reading the file and got 
+
 ![Timeline0_command3.png](./images/Timeline0_command3.png)
+
 I decoded the base64 string in cyberchef 
+
 ![Timeline0_flag.png](./images/Timeline0_flag.png)
 Then i wrap the flag picoCTF{71m311n3_0u7113r_h3r_43a2e7af}
 
