@@ -18,18 +18,18 @@ So instead i used the command
 
 **Step 3: Flag Hunting
 ![Forensics_Git0_command3.png](./images/Forensics_Git0_command3.png)
-![images/Forensics_Git0_command3_2.png](./images/Forensics_Git0_command3_2.png)
-![images/Forensics_Git0_command3_3.png](./images/Forensics_Git0_command3_3.png)
+![Forensics_Git0_command3_2.png](./images/Forensics_Git0_command3_2.png)
+![Forensics_Git0_command3_3.png](./images/Forensics_Git0_command3_3.png)
 **Flag::picoCTF{g17_1n_7h3_d15k_041217d8}
 
 
 ---
 
 **FORENSICS Git 1
-![[images/Forensics_Git1_description.png]]
+![Forensics_Git1_description.png](./images/Forensics_Git1_description.png)
 
 **Step1
-![[images/Forensics_Git1_command1.png]]
+![Forensics_Git1_command1.png](./images/Forensics_Git1_command1.png)
 
 **Step2
 NOTE: Standard Sector Size is 512 bytes
@@ -39,22 +39,23 @@ Partition 2, start sector=616448, so
 616448(multiply-by)512=315621376
 Partition 3, start sector=1140736
 so 1140736(multiply-by)512=584056832
-![[images/Forensics_Git1_command2.png]]
+![images/Forensics_Git1_command2.png](./images/Forensics_Git1_command2.png)
 
 **Step3
 Now i do /mnt/git1_p3/home/ctf-player/Code/secrets/.git
 
 **Step4
-![[images/Forensics_Git1_command3.png]]This will show a condensed history of the repository.
+![Forensics_Git1_command3.png](./images/Forensics_Git1_command3.png)
+This will show a condensed history of the repository.
 5fb8194 is the hash of the current hash and 177789a is the previous version.
 
 **Step5
 Now we use "Time Travel" Command to tell Git to change the files in the folder back to how they looked in the 177789a version
-![[images/Forensics_Git1_command4.png]]
+![Forensics_Git1_command4.png](./images/Forensics_Git1_command4.png)
 It will pull the files from that specific moment, and overwrites the current files in your directory
 
 **Step6
-![[images/Forensics_Git1_command5.png]]
+![Forensics_Git1_command5.png](./images/Forensics_Git1_command5.png)
 
 **The flag is picoCTF{g17_r3m3mb3r5_d4ddf904}
 
