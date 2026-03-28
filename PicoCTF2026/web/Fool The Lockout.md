@@ -15,7 +15,8 @@ The script uses  request.remote_addr to identify the client. This makes it insec
 **Exploitation
 I used a script to automate the matches. It also sends a header X-Forwarded-For which will automatically change the IP after every 10 requests.
 
-![[lockout_changeipcode.png]]
-![[lockout_flag.png]]
+![lockout_changeipcode.png](./images/lockout_changeipcode.png)
+
+![lockout_flag.png](./images/lockout_flag.png)
 and the flag is ::
 picoCTF{f00l_7h4t_l1m1t3r_e5c7c994}
