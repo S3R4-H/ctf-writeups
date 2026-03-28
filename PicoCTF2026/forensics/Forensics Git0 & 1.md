@@ -58,6 +58,7 @@ This will show a condensed history of the repository.
 **Step5
 
 Now we use "Time Travel" Command to tell Git to change the files in the folder back to how they looked in the 177789a version
+
 ![Forensics_Git1_command4.png](./images/Forensics_Git1_command4.png)
 
 It will pull the files from that specific moment, and overwrites the current files in your directory
