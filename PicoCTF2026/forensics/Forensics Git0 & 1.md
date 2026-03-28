@@ -4,22 +4,22 @@
 
 **Step1
 Looking at the file output
-![[images/Forensics_Git0_command1.png]]
+![Forensics_Git0_command1.png](./images/Forensics_Git0_command1.png)
 Partition 1 (ID=0x83) is a linux native partition. It behaves like a folder where files and directorues are stored.
 Partition 2 (ID=0x82) is Linux swap. It is used as overflow ram for the computer. It does not have standard directory structure so cannot be mounted
 Partition 3 (ID=0x83) is another linux native partition.
 
 **Step 2: I create a mount
-![[images/Forensics_Git0_command2.png]]
+![Forensics_Git0_command2.png](./images/Forensics_Git0_command2.png)
 This refused becayse /dev/loop1 and /dev/loop0 was already pointing at the exact same file.
-![[images/Forensics_Git0_command2_2.png]]
+![Forensics_Git0_command2_2.png](./images/Forensics_Git0_command2_2.png)
 So instead i used the command
-![[images/Forensics_Git0_command2_3.png]]
+![images/Forensics_Git0_command2_3.png](./images/Forensics_Git0_command2_3.png)
 
 **Step 3: Flag Hunting
-![[images/Forensics_Git0_command3.png]]
-![[images/Forensics_Git0_command3_2.png]]
-![[images/Forensics_Git0_command3_3.png]]
+![Forensics_Git0_command3.png](./images/Forensics_Git0_command3.png)
+![images/Forensics_Git0_command3_2.png](./images/Forensics_Git0_command3_2.png)
+![images/Forensics_Git0_command3_3.png](./images/Forensics_Git0_command3_3.png)
 **Flag::picoCTF{g17_1n_7h3_d15k_041217d8}
 
 
