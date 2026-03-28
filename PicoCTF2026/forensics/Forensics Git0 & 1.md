@@ -44,21 +44,25 @@ so 1140736(multiply-by)512=584056832
 ![images/Forensics_Git1_command2.png](./images/Forensics_Git1_command2.png)
 
 **Step3
+
 Now i do /mnt/git1_p3/home/ctf-player/Code/secrets/.git
 
 **Step4
+
 ![Forensics_Git1_command3.png](./images/Forensics_Git1_command3.png)
 
 This will show a condensed history of the repository.
 5fb8194 is the hash of the current hash and 177789a is the previous version.
 
 **Step5
+
 Now we use "Time Travel" Command to tell Git to change the files in the folder back to how they looked in the 177789a version
 ![Forensics_Git1_command4.png](./images/Forensics_Git1_command4.png)
 
 It will pull the files from that specific moment, and overwrites the current files in your directory
 
 **Step6
+
 ![Forensics_Git1_command5.png](./images/Forensics_Git1_command5.png)
 
 **The flag is picoCTF{g17_r3m3mb3r5_d4ddf904}
