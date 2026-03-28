@@ -13,6 +13,7 @@ The second like configures the request but does not sent it yet. It takes three 
 
 ![web-tutorial1_hint1.png](./images/web-tutorial1_hint1.png)
 
+
 **`script-src 'self' 'unsafe-inline';`**:  self allow script from same domain, unsafe-inline allows browser to execute JavaScript written directly inside HTML tags
 **`connect-src *;`**:  The wildcard mean the page is allowed to send or receive data to any website in the world (via fetch or XMLHttpRequest)
 **`default-src 'self' 'unsafe-inline';`**: 
@@ -21,12 +22,15 @@ The second like configures the request but does not sent it yet. It takes three 
 ---
 **PAYLOAD
 
+
 <script>var x=new XMLHttpRequest();x.open("GET","/xss-one-flag",true);x.onreadystatechange=function(){if(x.readyState==4)document.body.innerHTML=x.responseText};x.send();</script>
+
 
 The script failed because i was not admin
 ![web-tutorial_failure1.png](./images/web-tutorial_failure1.png)
 
 Ohh, i missed this
+
 ![web-tutorial1_hint2.png](./images/web-tutorial1_hint2.png)
 
 So i used pipedreams.com, which acts as a advanced webhook listener. 
@@ -103,10 +107,13 @@ WEB-TUTORIAL 2
 ---
 
 **DESCRIPTION/MISSION
+
 ![web-tutorial2_mission.png](./images/web-tutorial2_mission.png)
 
 I have a CSP hint
+
 ![web-tutorial2_hint1.png](./images/web-tutorial2_hint1.png)
+
 **`script-src 'self' 'nonce-random'`**: This means to run script on site, it must either be a file hosted on the same server or it must have a unique, one-time secret passcode that the server just generated. Therefore scripts hosted externally or inline scripts directly in the HTML are blocked eg, `<script>alert(1)</script>`
 
 ---
@@ -142,12 +149,15 @@ export default defineComponent({
 })
 
 Payload
+
 ![web-tutorial2_payload.png](./images/web-tutorial2_payload.png)
 
 Result in webhook
+
 ![web-tutorial2_attempt3.png](./images/web-tutorial2_attempt3.png)
 
 decoded
+
 ![web-tutorial2_attempt3.png](./images/web-tutorial2_attempt3.png)
 
 
