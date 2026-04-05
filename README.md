@@ -37,5 +37,5 @@ This repo serves as:
 ---
 
 ## 🌐 **Connect**
-- 🐙 [GitHub](https://github.com/S3R4-H)  
-- 💬 [Discord](https://discord.com/users/1368295816556581014)  
+- 🐙 [![GitHub](https://img.shields.io/badge/GitHub-S3R4--H-black?logo=github)](https://github.com/S3R4-H)
+- 💬 [![Discord](https://img.shields.io/badge/Discord-serafh.xyz%230-blue?logo=discord)](https://discord.com/users/1368295816556581014)
