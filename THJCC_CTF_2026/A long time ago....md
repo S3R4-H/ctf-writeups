@@ -24,7 +24,7 @@ the check is:
     
 3. Index loop compared key `0` to `'admin'`.
     
-4. Loose comparison evaluated true → admin privileges granted.
+4. Loose comparison evaluated true , admin privileges granted.
 
 ### Note
 
