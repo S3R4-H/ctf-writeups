@@ -1,4 +1,4 @@
-## Initial Observation
+## Initial Observation##
 
 We were provided with files **A–C**, which contained captured conversations and application components.
 

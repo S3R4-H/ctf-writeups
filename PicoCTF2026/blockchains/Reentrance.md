@@ -8,7 +8,7 @@ The contract is vulnerable to a **reentrancy attack** because it performs an ext
 ![reentrance_vulncode.png](images/reentrance_vulncode.png)
 Because the external call `msg.sender.call{value: amount}("")` happens before the user's balance is updated `balances[msg.sender] -= amount`. A malicious contract can call withdraw repeatedly within its receive or fallback function. This allow an attacker to drain the entire contract balance. Once the balance hits zero, the revealed flag flips to true, leaking the flag
 
-**Exploitation
+**Exploitation**
 I used a code to exploit.sol. The Attacker contract will hijack the bank execution flow using 
 - attack() to trigger 1ETH so the banks require check passes, then immediatly calls withdraw. 
 - receive() In solidity, when a contract recieves ETH without data, the receive() function automatically runs. 
@@ -22,23 +22,23 @@ Why the **Attacker contract** is needed:
 - - A **user wallet** (an externally owned account, EOA) can send ETH and call functions, but it can’t execute code automatically when ETH is received. There’s no `receive()` or `fallback` function in a wallet. So once the Bank sends ETH back, the wallet just passively accepts it — no chance to re‑enter the Bank mid‑transaction.
 - An **attacker contract**, on the other hand, is programmable. It _does_ have a `receive()` function that fires automatically when ETH arrives. That’s the hook that lets it immediately call `Bank.withdraw()` again before the Bank finishes its first execution. This is what creates the recursive loop.
 
-**forge create fail
+**forge create fail**
 
-**Compiled bytecode of attacker contract
+**Compiled bytecode of attacker contract**
 Since forge failed i got the raw hex needed for a manual deployment.
 ![reentrance_bytecode.png](images/reentrance_bytecode.png)
 When compiling exploit.sol, it created a JSON file containing metadata. The JSON field inside that JSON is the EVN Bytecode. 
 Block 1 is the deployment bytecode. It is the code that runs once to set up the contract, save variables and store the second block in the blockchain
 Block 2 is the runtime bytecode. This is the code that stays on the blockchain forever and contains attack() and receive() functions.
 
-**Command 1
+**Command 1**
 I took the deployment bytecode and append the bankaddress to the end of it.  This will create a new contract with this code.
 After running this the attackers contract is running at `0x6bcA4BDf61Cb9C46dCE3E057a36076C01d4Ebb2D`
 
 
 ![reentrance_command1foreal.png](images/reentrance_command1foreal.png)
 
-**Command 2
+**Command 2**
 The --value 1ether sends  1 ETH from player wallet into Attacker contract as it runs the attack function. This is the "seed money" 
 ![reentrance_command1.png](images/reentrance_command1.png)
 What will happen is::
@@ -50,11 +50,11 @@ What will happen is::
 - **Loop repeats** until the Bank is empty.
 - **Bank** sets `revealed = true`.
 
-**Flag
+**Flag**
 ![reentrance_flag.png](images/reentrance_flag.png)
 
 
-**Conclusion
+**Conclusion**
 This challenge demostrates the classic reentrancy vulnerability in Ethereum smart contracts. By exploiting the order of operations, an attacker can recursively drain funds. 
 Always update state before making external calls or use safegurds like ReentrancyGuard or the Checks-Effects-Interactions pattern
 

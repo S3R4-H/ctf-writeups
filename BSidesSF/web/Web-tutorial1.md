@@ -1,7 +1,7 @@
 ![web-tutorial1_description.png](./images/web-tutorial1_description.png)
 
 ---
-**DESCRIPTION
+**DESCRIPTION**
 Hint
 ```
 var xhr = new XMLHttpRequest();
@@ -20,7 +20,7 @@ The second like configures the request but does not sent it yet. It takes three 
 **`style-src-elem` & `font-src`**:  Restricts CSS and fonts to only come from self or Google fonts
 
 ---
-**PAYLOAD
+**PAYLOAD**
 
 
 <script>var x=new XMLHttpRequest();x.open("GET","/xss-one-flag",true);x.onreadystatechange=function(){if(x.readyState==4)document.body.innerHTML=x.responseText};x.send();</script>
@@ -34,7 +34,7 @@ Ohh, i missed this
 ![web-tutorial1_hint2.png](./images/web-tutorial1_hint2.png)
 
 So i used pipedreams.com, which acts as a advanced webhook listener. 
-**Submitted payload
+**Submitted payload**
 ```
 <script>
   
@@ -85,14 +85,14 @@ OR
 Because i am not admin, my  browser is blind to their session. The webhook captures the event that happens in the admins browser i dont control.
 
 ---
-**FLAG
+**FLAG**
 
 ![web-tutorial_requestbin.png](./images/web-tutorial_requestbin.png)
 The first request shows the message "Sorry, admins only" and the second one shows the actual flag.
 
 
 ---
-**REFERENCE
+**REFERENCE**
 https://medium.com/@yuvaraj.io/lesson-58-understanding-xmlhttprequest-xhr-the-old-way-to-talk-to-apis-before-fetch-f3eb751d3ee3
 
 
@@ -106,7 +106,7 @@ WEB-TUTORIAL 2
 
 ---
 
-**DESCRIPTION/MISSION
+**DESCRIPTION/MISSION**
 
 ![web-tutorial2_mission.png](./images/web-tutorial2_mission.png)
 
@@ -118,8 +118,8 @@ I have a CSP hint
 
 ---
 
-**THE VULNERABILITY
-**Base Tag Injection vulnerability
+**THE VULNERABILITY**
+**Base Tag Injection vulnerability**
 
 The CSP lacks base-uri. This is directive that restricts the URLs allowed in a doc's base element, which defines the base URL for resolving related links. It enhances security by preventing attackers from redirecting relative links to malicious sites.
 
@@ -163,7 +163,7 @@ decoded
 
 ---
 
-***REFERENCES
+***REFERENCES***
 https://bugcrowd.com/disclosures/fd5b1c75-54a1-4db9-8618-a4e26c6b8147/base-tag-hijacking-via-host-header-injection
 
 https://punksecurity.co.uk/blog/base_tag_injections/

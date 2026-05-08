@@ -21,7 +21,7 @@ The changeOwnder function is marked as public, but it lacks require statements o
 
 **Solution**
 
-**Command 1:
+**Command 1:**
 format: `cast send [Contract] "changeOwner(address)" [YourAddress] --private-key [YourKey]`
 ![command1.png](images/command1.png)
 The output is the transaction reciept. It proves that the attack worked and i am officially the owner of the contract. Now that i am the ownner. I trigger the solve() function which checks if msg.sender == owner

@@ -27,7 +27,7 @@ params:["pending", true]: The pending targets the mempool which holds pending tr
 In the input field i found 
 "input":"0x76fe1e92000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000177069636f4354467b6d336d7030306c5f7031723474337d000000000000000000 which is hex of `picoCTF{m3mp00l_p1r4t3}`
 
-**Command 2: Solve the Challenge
+**Command 2: Solve the Challenge**
 With the leaked string, we called the contract’s `solve()` function:
 Now we solve with command
 ![front_running_solve.png](images/front_running_solve.png)
@@ -38,10 +38,10 @@ The data field in the logs contains the real flag.
 The string in the mempool picoCTF{m3mp00l_p1r4t3} was the key to unlock the solve() function. The contract required the specific string because its hash matches the targetHash
 ![front_running_code.png](images/front_running_code.png)
 
-**Flag
+**Flag**
 ![front_running_flag.png](images/front_running_flag.png)
 
 
-**Conclusion/Lesson Learnt
+**Conclusion/Lesson Learnt**
 Even if the contract tries to prevent front-running, transaction data in the mempool is public. 
 Sensitive inputs should never be transmitted directly in the transactions.
