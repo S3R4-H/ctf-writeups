@@ -9,15 +9,8 @@
 ---
 
 ## 👋 **Welcome**
-I’m currently at a **beginner level** in CTF competitions, and this repository documents my learning journey.  
-By sharing my write-ups, I hope to both improve my skills and help others who are starting out too.
+This repository is a collection of my **Capture The Flag (CTF)** challenge write-ups.
 
-This repository is a collection of my **Capture The Flag (CTF)** challenge write-ups.  
-Here I document the **process, tools, and techniques** I used to solve different security puzzles.  
-
-The goal of this repo is to:
-- Share knowledge with the community and showcase my skills in **cybersecurity**
-  
 ---
 
 ## ⚡ **About**
@@ -30,9 +23,10 @@ This repo serves as:
 
 ## 📝 Writeups
   **2026**
-- [THJCC CTF 2026](./THJCC_CTF_2026/)  **MY_FIRST_WRITEUPS**
+- [THJCC CTF 2026](./THJCC_CTF_2026/)  
 - [PicoCTF2026](./PicoCTF2026)
 - [BSidesSF](./BSidesSF)
+- [kubSTUCTF](./kubstuCTF2026)
 
 ---
 
