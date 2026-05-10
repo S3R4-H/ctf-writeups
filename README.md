@@ -13,14 +13,6 @@ This repository is a collection of my **Capture The Flag (CTF)** challenge write
 
 ---
 
-## ⚡ **About**
-This repo serves as:
-- A **portfolio** of my problem-solving skills
-
-✨ More writeups will be added as I continue solving challenges! ✨  
-
----
-
 ## 📝 Writeups
   **2026**
 - [THJCC CTF 2026](./THJCC_CTF_2026/)  - Sat, 21 Feb. 2026 - Sun, 22 Feb
