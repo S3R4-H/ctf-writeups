@@ -21,11 +21,11 @@ The sessions are signed not encrypted so the data itself is just Base64-encoded 
 **Exploitation
 ![NoFA_burp_session.png](images/NoFA_burp_session.png)
 I take the highlighted part of the session and decode it in cyberchef
-![NoFA_cyberchefdecode.png](images/NoFA_cyberchefdecode)
+![NoFA_cyberchefdecode.png](images/NoFA_cyberchefdecode.png)
 Then i enter the otp_secret value in the /two_fa endpoint.
 
 **Flag
-![[NoFA_flag.png]](images/NoFA_flag.png)
+![NoFA_flag.png](images/NoFA_flag.png)
 The Flag is::
 picoCTF{n0_r4t3_n0_4uth_9617ed73}
 
