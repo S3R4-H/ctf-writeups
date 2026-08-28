@@ -23,11 +23,11 @@ Burp response redirects me to /login and my price does not change
 
 ![](images/manipulate-fail-2.png)
 
-Second test, i target the quantity parameter within /add_to_cart/21
+Second test, i add the flag to /cart and intercept the request, i target the quantity parameter within /add_to_cart/21
 
 ![](images/quantity.png)
 
-I change it to a lower number to decrease its price. It did not work when i change in browser, so i used burpsuite intercept.
+I change it to a negative number to decrease its price. It did not work when i change in browser, so i used burpsuite intercept.
 
 ![](images/quantity-down.png)
 
