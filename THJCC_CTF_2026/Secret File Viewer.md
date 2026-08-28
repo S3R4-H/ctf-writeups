@@ -129,22 +129,6 @@ From the above image, you can see i did not have to traverse to reach the root a
 ![Final](./images/secret_file_viewer_final.png)
 
 
-NOTE::We assume it uses functions like `include()`, `require()`, `file_get_contents()`, or `readfile()` because your `curl` command successfully returned the contents of `/etc/passwd`
-
-## Conclusion
-
-Agent Q implemented a **security theater mechanism**.
-
-The obfuscated JavaScript was designed to appear as a protection layer but had:
-
-- Zero backend validation
-    
-- No absolute path restriction
-    
-- No server-side filtering
-    
-The vulnerability is a classic **Local File Inclusion (LFI)** via absolute path injection.
-
 FLAG::`THJCC{h0w_dID_y0u_br34k_q'5_pr073c710n???}`
 
 
