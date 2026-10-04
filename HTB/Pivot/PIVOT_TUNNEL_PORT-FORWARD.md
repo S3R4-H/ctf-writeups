@@ -62,8 +62,11 @@ The initial target host's internal ip is 172.16.5.15 and we have another one at 
 ![question_4.png](images/question_4.png)
 
 I will background my session and continue using MSF and configure it to  use SOCKS Proxy.
+
 ![answer_4.1.png](images/answer_4.1.png)
 ![answer4.2.png](images/answer4.2.png)
+
+
 I also configure proxychains in my attack host
 ![answer_4-conf.png](images/answer_4-conf.png)
 
