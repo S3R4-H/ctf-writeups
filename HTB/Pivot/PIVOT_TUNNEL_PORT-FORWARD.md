@@ -93,6 +93,7 @@ The flag::
 ![question_5.png](images/question_5.png)
 
 The hint is "We may be able to find something stored in LSASS."
+
 More on the issue: https://redcanary.com/threat-detection-report/techniques/lsass-memory/
 
 
