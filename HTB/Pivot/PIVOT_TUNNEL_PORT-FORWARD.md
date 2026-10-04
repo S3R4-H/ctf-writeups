@@ -51,6 +51,7 @@ I will start with 172.16.5.0/24. And i expect the internal IPs to be between 172
 
 ![answer_3.2.png](images/answer_3.2.png)
 
+
 I will use ping_sweep to enumerate internal hosts. 
 ![answer_3.png](images/answer_3.png)
 
