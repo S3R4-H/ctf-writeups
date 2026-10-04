@@ -68,6 +68,8 @@ I will background my session and continue using MSF and configure it to  use SOC
 
 
 I also configure proxychains in my attack host
+
+
 ![answer_4-conf.png](images/answer_4-conf.png)
 
 Afterwards i add routes.
