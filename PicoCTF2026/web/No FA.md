@@ -3,10 +3,12 @@
 **Description
 
 **First we are given the db of users and their hashes. We will use john to crack the admins hash.
-![NoFA_passwordcrack1.png](images/NoFA_passwordcrack1.png)
-Since i already cracked the password i get "No password hashes left to crack (see FAQ)"
-So i will retrieve the cracked password
-![NoFA_passwordcrack2.png](images/NoFA_passwordcrack2.png)
+
+```bash
+john --format=raw-sha256 --wordlist=/usr/share/wordlists/rockyou.txt admin_hash.txt
+```
+
+Password: `apple@123`
 
 **After entering the password i must enter OTP for verifying
 ![NoFA_second_screen.png](images/NoFA_second_screen.png)
